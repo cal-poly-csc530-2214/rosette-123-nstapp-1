@@ -1,0 +1,7 @@
+6. Let P_c_v have the value of true if vertex v has the color c, and false otherwise.
+    a. Λ_v (V_c P_c_v). Every vertex must have at least one variable P_c_v such that P_c_v is true.
+       For example, with two vertices and colors {r, g}, this would be (P_r_1 V P_g_1) Λ (P_r_2 V P_g_2).
+    b. Λ_a, Λ_b (P_a_v → ¬P_b_v) -> Λ_a, Λ_b (¬P_a_v V ¬P_b_v), for a != b. If P_a_v, then for all other colors b, ¬P_b_v.
+    c. Λ_c (¬P_c_i V ¬P_c_j), where (i, j) is an edge in the graph.
+    d. The second constraint is unneeded, as if a vertex can be colored multiple colors, picking any one of them will satisfy a coloring of the graph.
+    e. TODO

@@ -8,7 +8,7 @@
 ; * 'CONTINGENCY if there are two interpretations I and I′ such that I satisfies F and I' does not.
 (define (classify F)
   (match (verify (assert F))
-    ['(unsat) 'TAUTOLOGY]
+    [(? unsat?) 'TAUTOLOGY]
     [(model) 'CONTRADICTION]
     [_ 'CONTINGENCY]))
 

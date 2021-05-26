@@ -4,4 +4,5 @@
     b. Λ_a, Λ_b (P_a_v → ¬P_b_v) -> Λ_a, Λ_b (¬P_a_v V ¬P_b_v), for a != b. If P_a_v, then for all other colors b, ¬P_b_v.
     c. Λ_c (¬P_c_i V ¬P_c_j), where (i, j) is an edge in the graph.
     d. The second constraint is unneeded, as if a vertex can be colored multiple colors, picking any one of them will satisfy a coloring of the graph.
-    e. TODO
+    e. (Λ_v (V_c P_c_v)) Λ (Λ_a, Λ_b (¬P_a_v V ¬P_b_v), for a != b) Λ (Λ_c (¬P_c_i V ¬P_c_j)).
+       There are |V| * min(|V|, k) variables and 2 * |V| + (k * |E|) clauses.
